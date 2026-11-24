@@ -31,7 +31,7 @@ async def extract_content(
     pictures: bool = False,
     no_ocr: bool = False,
 ) -> str:
-    """Extract content from a URL or file. Does not require an API key for most sources (web pages, PDFs, documents, YouTube transcripts). API key is only needed for audio/video transcription.
+    """Extract content from a URL or file. Does not require an API key for most sources (web pages, PDFs, documents, YouTube transcripts). An API key is needed for audio/video transcription and for API-key-backed URL engines such as `specstream` (requires `SPECSTREAM_API_KEY`).
 
     Args:
         url: URL to extract content from (web page, YouTube video, PDF link, etc.)
